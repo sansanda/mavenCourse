@@ -9,8 +9,12 @@ public class ArticuloService {
 	public List<Articulo> listarArticulos()
 	{
 		List<Articulo> listaArticulos = new ArrayList<Articulo>();
-		Articulo articulo = new Articulo(1,"","",35.0);
+		listaArticulos.add(new Articulo(1,"Pantalones","Pantalon1",35.0));
+		listaArticulos.add(new Articulo(2,"Pantalones","Pantalon2",40.0));
+		listaArticulos.add(new Articulo(3,"Pantalones","Pantalon3",45.0));
+		
 		return listaArticulos;
+		
 	}
 
 }

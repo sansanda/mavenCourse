@@ -1,21 +1,22 @@
 package pe.com.devcode.model;
 
-import lombok.AccessLevel;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.Setter;
 
 @Setter
 @Getter
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
 @NoArgsConstructor
 
 public class Articulo {
 	
-	private int id;
-	private String codigo;
-	private String nombre;
-	private double precio;
+	private @NonNull int id;
+	private @NonNull String codigo;
+	private @NonNull String nombre;
+	private @NonNull double precio;
 	
 }
